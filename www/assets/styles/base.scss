@@ -1,0 +1,255 @@
+a,
+a:visited,
+a:active {
+  color: #3388ff;
+  text-decoration: none;
+  outline: 0;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:focus {
+  outline: 0 none;
+}
+
+em, i {
+  font-style: normal;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.fl{
+  float: left !important;
+}
+
+.fr{
+  float: right !important;
+}
+
+.tac{
+  text-align: center !important;
+}
+
+.tar{
+  text-align: right !important;
+}
+
+.vat{
+  vertical-align: top !important;
+}
+
+.vam{
+  vertical-align: middle !important;
+}
+
+.vab{
+  vertical-align: bottom !important;
+}
+
+.ofa{
+  overflow: auto !important;
+}
+
+.pointer{
+  cursor: pointer !important;
+}
+
+.bold{
+  font-weight: bold !important;
+}
+
+.pointer{
+  cursor: pointer !important;
+}
+
+.db{
+  display: block !important;
+}
+
+.dn{
+  display: none !important;
+}
+
+.dib{
+  display: inline-block !important;
+}
+
+.relative{
+  position: relative !important;
+}
+
+.absolute{
+  position: absolute !important;
+}
+
+@for $i from 10 through 50 {
+  .f#{$i} {
+    font-size: $i*1px !important;
+  }
+}
+
+@for $i from 1 through 10 {
+  .br#{$i*1} {
+    border-radius: $i*1px !important;
+  }
+}
+
+@for $i from 1 through 10 {
+  .w#{$i*10} {
+    width: $i*10px !important;
+  }
+}
+
+@for $i from 1 through 10 {
+  .h#{$i*10} {
+    height: $i*10px !important;
+  }
+}
+
+@for $i from 1 through 100 {
+  .lh#{$i*1} {
+    line-height: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .mt#{$i} {
+    margin-top: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .mr#{$i} {
+    margin-right: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .mb#{$i} {
+    margin-bottom: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .ml#{$i} {
+    margin-left: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .m#{$i} {
+    margin: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 60 {
+  .pt#{$i*1} {
+    padding-top: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 60 {
+  .pr#{$i*1} {
+    padding-right: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 60 {
+  .pb#{$i*1} {
+    padding-bottom: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 60 {
+  .pl#{$i*1} {
+    padding-left: $i*1px !important;
+  }
+}
+
+@for $i from 0 through 60 {
+  .p#{$i*1} {
+    padding: $i*1px !important;
+  }
+}
+
+// 定位全屏
+@mixin allcover{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+// 定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 定位上下居中
+@mixin ct {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// 定位上下居中
+@mixin cl {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// 宽高
+@mixin wh($width, $height){
+  width: $width;
+  height: $height;
+}
+
+// 字体大小，颜色
+@mixin sc($size, $color){
+  font-size: $size;
+  color: $color;
+}
+
+// inline-flex 布局和 子元素 对其方式
+@mixin ifj($type: space-between){
+  display: inline-flex;
+  justify-content: $type;
+
+}
+
+// flex 布局和 子元素 对其方式
+@mixin fj($type: space-between){
+  display: flex;
+  justify-content: $type;
+
+}
+
+// inline-flex 布局和 子元素 对其方式
+@mixin ifj($type: space-between){
+  display: inline-flex;
+  justify-content: $type;
+
+}
+
+// ionic 样式覆盖
+ion-item{
+  --border-color: #EBEBED !important
+}
